@@ -1,0 +1,39 @@
+# Render Blueprint — one free Docker web service running the whole app (UI + API).
+# Render dashboard -> New -> Blueprint -> select this repository.
+#
+# Free instance: 0.1 CPU / 512 MB RAM, sleeps after 15 min idle, ephemeral disk.
+# Limits below are sized for that: short clips, one job at a time, faster-whisper tiny (int8).
+services:
+  - type: web
+    name: splice
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: FRONTEND_ORIGINS
+        # Add your Vercel URL here if you also deploy the UI on Vercel (comma-separated).
+        value: https://splice.vercel.app
+      - key: MAX_UPLOAD_MB
+        value: "30"
+      - key: MAX_VIDEO_DURATION_SECONDS
+        value: "90"
+      - key: MAX_CONCURRENT_JOBS
+        value: "1"
+      - key: MAX_QUEUED_JOBS
+        value: "2"
+      - key: JOB_TIMEOUT_SECONDS
+        value: "1500"
+      - key: JOB_TTL_MINUTES
+        value: "30"
+      - key: RATE_LIMIT_JOBS_PER_HOUR
+        value: "10"
+      - key: MIN_FREE_DISK_MB
+        value: "200"
+      # A single FFmpeg pass is lighter than MoviePy's frame pipe on a 0.1-CPU instance.
+      - key: RENDER_ENGINE
+        value: ffmpeg
+      - key: SOURCE_REPO_URL
+        value: ""

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# Environment files (keep the examples)
+.env
+.env.*
+!.env.example
+
+# Runtime data: temporary media, job database, model weights
+backend/tmp/
+backend/models/
+models/
+*.pt
+*.bin
+*.safetensors
+*.sqlite
+*.db
+*.db-wal
+*.db-shm
+
+# Media (never commit uploads or rendered output)
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.m4v
+*.wav
+
+# Logs & OS cruft
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

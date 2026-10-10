@@ -1,0 +1,5 @@
+# Alternative Whisper engine: the same Whisper weights converted to CTranslate2 (int8 on CPU).
+# Several times faster and ~4x less memory than openai-whisper — used in the Docker image.
+# Enable with WHISPER_ENGINE=faster-whisper
+-r requirements-base.txt
+faster-whisper>=1.0

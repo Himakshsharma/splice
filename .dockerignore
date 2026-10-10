@@ -1,0 +1,17 @@
+**/node_modules
+**/dist
+**/.venv
+**/venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+backend/tmp
+backend/models
+backend/.env
+frontend/.env
+frontend/.env.local
+.git
+docs/screenshots
+*.mp4
+*.mov
+*.webm

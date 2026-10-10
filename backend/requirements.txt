@@ -1,0 +1,5 @@
+# Local development: core + OpenAI's reference Whisper implementation (PyTorch).
+# For a much smaller CPU-only PyTorch download use:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements.txt
+-r requirements-base.txt
+openai-whisper>=20240930

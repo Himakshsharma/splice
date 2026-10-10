@@ -1,0 +1,5 @@
+# Tests run without a Whisper engine (the real-model test is opt-in), so CI stays fast.
+-r requirements-base.txt
+pytest>=8
+httpx>=0.27
+ruff>=0.6

@@ -1,0 +1,8 @@
+# SPLICE backend — core runtime dependencies (Python 3.11), without a Whisper engine.
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic>=2.7,<3
+numpy>=1.26,<3
+scipy>=1.11
+moviepy>=2.1,<3
