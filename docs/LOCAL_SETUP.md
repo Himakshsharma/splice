@@ -46,7 +46,7 @@ sudo apt install -y git python3.11 python3.11-venv nodejs npm ffmpeg
 ## 2. Get the code
 
 ```bash
-git clone https://github.com/<you>/splice.git
+git clone https://github.com/Himakshsharma/splice.git
 cd splice
 ```
 

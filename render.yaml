@@ -36,4 +36,7 @@ services:
       - key: RENDER_ENGINE
         value: ffmpeg
       - key: SOURCE_REPO_URL
-        value: ""
+        value: https://github.com/Himakshsharma/splice
+      # Render passes environment variables to Docker builds as build arguments (baked into the UI).
+      - key: VITE_SOURCE_REPO_URL
+        value: https://github.com/Himakshsharma/splice
