@@ -14,8 +14,8 @@ services:
     autoDeploy: true
     envVars:
       - key: FRONTEND_ORIGINS
-        # Add your Vercel URL here if you also deploy the UI on Vercel (comma-separated).
-        value: https://splice.vercel.app
+        # The Vercel-hosted UI (comma-separate more origins if needed).
+        value: https://splice-chi.vercel.app
       - key: MAX_UPLOAD_MB
         value: "30"
       - key: MAX_VIDEO_DURATION_SECONDS

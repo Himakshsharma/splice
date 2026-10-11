@@ -4,7 +4,9 @@
 transcribes the speech with **OpenAI Whisper**, measures silence directly from the audio with **NumPy**, builds an
 inspectable edit decision list, and renders a clean **H.264/AAC MP4** with **MoviePy + FFmpeg**.
 
-> Live demo: _add your URL here after deploying (see [Deployment](#deployment))_ · API docs: `<your-url>/api/docs`
+> **Live demo:** https://splice-chi.vercel.app · API: https://splice-iloh.onrender.com/api/docs
+>
+> Runs on free tiers: the backend sleeps when idle, so the first request can take about a minute, and processing a clip takes a few minutes on a 0.1-CPU instance.
 
 ![SPLICE landing page](docs/screenshots/01-landing.png)
 
