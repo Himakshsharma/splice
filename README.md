@@ -1,5 +1,10 @@
 # SPLICE — automatic jump cuts for talking videos
 
+[![CI](https://github.com/Himakshsharma/splice/actions/workflows/ci.yml/badge.svg)](https://github.com/Himakshsharma/splice/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-React-3178C6)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 **SPLICE** removes dead air from talking-head videos. Upload a clip, choose how tight the edit should be, and SPLICE
 transcribes the speech with **OpenAI Whisper**, measures silence directly from the audio with **NumPy**, builds an
 inspectable edit decision list, and renders a clean **H.264/AAC MP4** with **MoviePy + FFmpeg**.
